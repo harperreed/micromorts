@@ -1,0 +1,34 @@
+baseURL: /
+
+publishDir: "public"
+languageCode: en-us
+title: "Micromorts"
+
+
+canonifyURLs: true
+enableRobotsTXT: true
+sectionPagesMenu: main
+
+params:
+  subtitle: "We are all going to die"
+  ga_id: "UA-xxxxx-xx"
+  description: ""
+  keywords: ""
+  cachebuster: ""
+  name: "Harper Reed"
+  email: harper@modest.com
+  twitter: harper
+
+  base: appvq4mdIhXFeKAcv
+  table: Micromorts
+
+
+disableKinds:
+  - section
+  - section
+  - taxonomy
+  - taxonomyTerm
+  - rss
+  - section
+  - page
+

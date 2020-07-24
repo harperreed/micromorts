@@ -1,0 +1,27 @@
+{{ define "main" }}
+    <main aria-role="main">
+      <header class="homepage-header">
+        <h1>{{.Title}}</h1>
+        {{ with .Site.Params.subtitle }}
+          <h3><span class="subtitle">{{.}}</span></h3>
+        {{ end }}
+      </header>
+      <hr>
+      <div>
+        {{.Content}}
+      </div>
+      <hr>
+      <div>
+
+        {{- partial "airtable_base.html" . -}}
+      </div>
+    </main>
+
+<style>
+  .openai{
+    color:red
+  }
+</style>
+
+
+{{ end }}

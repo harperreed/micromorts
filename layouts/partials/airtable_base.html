@@ -1,0 +1,13 @@
+{{ $apiPrefix := "https://api.airtable.com/v0/"}}
+{{ $key := getenv "AIRTABLE_KEY" }}
+
+{{ $results := getJSON $apiPrefix $.Site.Params.base "/" $.Site.Params.table "?api_key=" $key }}
+
+{{ range $results.records }}
+  {{ with .fields.Activity }}
+    {{ . }}
+  {{end}}
+
+{{ end }}
+
+fuck yea
