@@ -4,9 +4,7 @@ date: 2020-07-24T05:31:18Z
 draft: false
 ---
 
-Dying! It is what humans do. We do, however, attempt to delay this end for as long as possible. We continue to make horrible decisions around risk and death. 
-
-Living means taking risks. With this said, we need a better way to understand risk. We will use micromorts. Luckily this already exists and is helpful to understand and compare risk of death. 
+Dying! It is what humans do. We do, however, attempt to delay this end for as long as possible. We continue to make horrible decisions around risk and death.  
 
 We can use [micromorts](https://en.wikipedia.org/wiki/Micromort) to help track how risky an activity is and compare it to other activities. This will help us understand what is dangerous and what isn't. 
 
@@ -16,7 +14,6 @@ From wikipedia
 
 
 For instance, living one day at age 20 is *1 micromort*, running a marathon is *7 micromorts*, and riding a motorcycle for 60 miles is *10 micromorts*. We can easily see that riding a motorcycle is more dangerous than running a marathon. 
-
 
 This is helpful. 
 
