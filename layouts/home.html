@@ -1,0 +1,40 @@
+{{ define "main" }}
+    <main aria-role="main">
+      <header class="homepage-header">
+        <h1>{{.Title}}</h1>
+        {{ with .Site.Params.subtitle }}
+          <h3><span class="subtitle text-muted">💀 {{.}} 💀</span></h3>
+        {{ end }}
+      </header>
+
+      <hr>
+      <div>
+        {{.Content}}
+      </div>
+      <hr>
+
+      
+
+      <div>
+
+        {{- partial "micromorts_table.html" . -}}
+      </div>
+
+      <div>
+        {{- partial "sources.html" . -}}
+      </div>
+
+      <div>
+        {{- partial "micromort_form.html" . -}}
+      </div>
+
+    </main>
+
+<style>
+  .openai{
+    color:red
+  }
+</style>
+
+
+{{ end }}

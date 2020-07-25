@@ -1,0 +1,29 @@
+{{ $apiPrefix := "https://api.airtable.com/v0/"}}
+{{ $key := getenv "AIRTABLE_KEY" }}
+
+{{ $results := getJSON $apiPrefix $.Site.Params.base "/" $.Site.Params.table "?help=1&api_key=" $key  "&sort%5B0%5D%5Bfield%5D=" "Micromorts"  "&sort%5B0%5D%5Bdirection%5D=" "desc"}}
+<h3>Activities</h3>
+<table id="micromorts" class="table table-striped table-sm table-hover">
+    <caption>Micromorts for various activities</caption>
+    <thead>
+      <tr>
+        <th scope="col">Activity</th>
+        <th scope="col">Micromorts</th>
+      </tr>
+    </thead>
+    <tbody>
+{{ range $results.records }}
+  <tr  {{ with .fields.Highlight }}class="table-danger"{{end}}>
+    {{ with .fields.Activity }}
+    <td>{{. }}</td>
+    {{end}}
+    {{ with .fields.Micromorts }}
+    <td>{{. }}</td>
+    {{end}}
+  
+  </tr>
+{{ end }}
+
+</tbody>
+</table>
+

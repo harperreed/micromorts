@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <div class="container">      
+      
+
+      <div class=" p-4 p-md-4  rounded ">
+        {{ partial "header.html" . }}
+        {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+        {{ end }}
+        {{ partial "footer.html" . }}
+      </div>
+      
+    </div>
+      <script type="text/javascript" src="/js/main.js?cache={{ now }}"></script>
+      <script src="//instant.page/2.0.0" type="module" integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
+    </body>
+</html>
