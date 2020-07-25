@@ -12,7 +12,7 @@ We can use [micromorts](https://en.wikipedia.org/wiki/Micromort) to help track h
 
 From wikipedia
 
-    A micromort (from micro- and mortality) is a unit of risk defined as one-in-a-million chance of death Micromorts can be used to measure riskiness of various day-to-day activities. A microprobability is a one-in-a million chance of some event; thus a micromort is the microprobability of death. The micromort concept was introduced by Ronald A. Howard who pioneered the modern practice of decision analysis.
+>A micromort (from micro- and mortality) is a unit of risk defined as one-in-a-million chance of death Micromorts can be used to measure riskiness of various day-to-day activities. A microprobability is a one-in-a million chance of some event; thus a micromort is the microprobability of death. The micromort concept was introduced by Ronald A. Howard who pioneered the modern practice of decision analysis.
 
 
 For instance, living one day at age 20 is *1 micromort*, running a marathon is *7 micromorts*, and riding a motorcycle for 60 miles is *10 micromorts*. We can easily see that riding a motorcycle is more dangerous than running a marathon. 
