@@ -32,3 +32,9 @@ disableKinds:
   - section
   - page
 
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^WC_
+      - AIRTABLE_KEY

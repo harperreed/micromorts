@@ -1,7 +1,10 @@
 {{ $apiPrefix := "https://api.airtable.com/v0/"}}
 {{ $key := getenv "AIRTABLE_KEY" }}
+{{ $model_name := "Sources" }}
+{{ $headers := dict "Authorization" (printf "Bearer %s" $key) }}
 
-{{ $results := getJSON $apiPrefix $.Site.Params.base "/" "Sources" "?api_key=" $key  "&sort%5B0%5D%5Bfield%5D=" "Count"  "&sort%5B0%5D%5Bdirection%5D=" "desc"}}
+
+{{ $results := getJSON $apiPrefix $.Site.Params.base "/" $model_name "?sort%5B0%5D%5Bfield%5D=" "Count"  "&sort%5B0%5D%5Bdirection%5D=" "desc" $headers}}
 <hr>
 <h3>Sources</h3>
 <ul>
